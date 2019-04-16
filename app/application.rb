@@ -19,8 +19,12 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
  
-    @@items.each do |item|
-      resp.write "#{item}\n"
+    if req.path.match(/items/)
+      @@items.each do |item|
+        resp.write "#{item}\n"
+      end
+    else
+      resp.write "Path Not Found"
     end
  
     resp.finish
