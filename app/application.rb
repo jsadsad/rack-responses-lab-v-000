@@ -21,5 +21,7 @@ class Application
     @@items.each do |item|
       resp.write"#{item} \n"
     end
+    
+    resp.finish
   end
 end
