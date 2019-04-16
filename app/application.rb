@@ -12,11 +12,12 @@
 # end
 
 class Application
-  @@items = []
+  @@items = ["Burger", "Quest Bar", "Protein Shake"]
   
   def call(env)
     resp = Rack::Response.new
     req = Rack::Request.new(env)
     
+    @@items.each
   end
 end
