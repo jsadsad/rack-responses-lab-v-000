@@ -18,6 +18,7 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
     
-    @@items.each
+    @@items.each do |item|
+      
   end
 end
