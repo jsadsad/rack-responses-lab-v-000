@@ -10,3 +10,9 @@
 #     resp.finish
 #   end
 # end
+
+class Application
+  def call(env)
+  1
+  end
+end
