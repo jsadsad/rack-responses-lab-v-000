@@ -19,6 +19,6 @@ class Application
     req = Rack::Request.new(env)
     
     @@items.each do |item|
-      
+      resp.write"
   end
 end
